@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    height: 100vh;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+   /* background-image: linear-gradient(to right top, #f2c230, #dfae27, #cc9a1f, #b98717, #a6740e, #a8760e, #a9780d, #ab7a0d, #c19216, #d7ab1f, #ebc529, #ffe034); */
+   background-image: url(imagem/img-prev.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+}
+
+.form{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1.25rem;
+    margin: 1rem;
+    border-radius: 2.25rem;
+   background-color: #8C5C03;;
+    box-shadow: 20px 20px 20px rgba(90, 82, 6, 0.849);
+    
+}
+.form img:nth-last-child(2) {
+    max-width: 385px;
+    height: auto;
+    border-radius: 5rem;
+    margin: 0.2rem;
+    opacity:0.6; 
+    transition:all 0.5s      
+}
+.form img:nth-last-child(2):hover{
+    opacity: 1;
+    
+}
+
+fieldset{
+   border: 1px solid #8C5C03;
+   padding: 1.5rem;
+
+}
+
+fieldset legend span{
+    color: #dac18ddc;
+}
+legend{
+    text-align: left;
+    background-color: #8C5C03;
+    font-size: 2rem;
+    margin: 0.10rem;
+    color: #260B01;
+    font-weight: 700;
+    font-style: italic;
+    padding: 0.25rem;
+    
+}
+fieldset legend span::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    left: 400px;
+    bottom: 408px;
+    background-image: linear-gradient(to right top, #f2c230, #dfae27, #cc9a1f, #b98717, #a6740e, #a8760e, #a9780d, #ab7a0d, #c19216, #d7ab1f, #ebc529, #ffe034);
+  
+
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.dados{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #260B01;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-right: 1.7rem;
+}
+.dados label{
+    margin-right: 8px;
+}
+
+input{
+    text-align: center;
+    height: 1.5rem;
+    border: none;
+}
+
+
+#btn{
+    padding: 1rem;
+    margin: 1rem;
+    
+    
+}
+button{
+  padding: 1rem;
+  width: 100%;
+  background-color: #260B01;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  border-radius: 2rem;
+  color: #8C6534;
+  font-style: italic;
+  transition: all ease-in-out 0.6s;
+ 
+
+}
+
+button:hover{
+    background-color: #B99A59;
+    transform: scale(1.1);
+}
+
+.rsociais{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.rsociais span{
+    text-align: center;
+    font-size: 1.10rem;
+    font-style: italic;
+}
+.rsociais ul{
+    margin-top: 0.75rem;
+    padding: 0.5rem;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rsociais ul li{
+    padding: 0.75rem;
+    
+}
+
+.rsociais ul li img:hover{
+    transition: ease-in-out 0.8s;
+    transform: rotate(-35deg) scale(1.5);
+    
+     
+}
+
+
+@media(max-width:575.98px){
+    body{
+        background-color: #a9780d;
+       
+      
+        
+    }
+
+    .form{
+        width: 75%;
+        height: auto;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+
+
+    }
+    .form img{
+        width: 75%;
+    
+    }
+    .content{
+        width: 100%;
+    }
+}
+
+@media(min-width: 767.98px) {
+   .form{
+       width: auto;
+       margin: 0 auto;
+   }
+}
